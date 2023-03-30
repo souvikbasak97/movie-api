@@ -20,11 +20,8 @@ import java.util.List;
 public class Movie {
     @Id
     private ObjectId id;
-    @Autowired
     private String imdbId;
-    @Autowired
     private String title;
-    @Autowired
     private String releaseDate;
     private String trailerLink;
     private String poster;
