@@ -1,6 +1,3 @@
 FROM openjdk:17
-VOLUME /tmp
-EXPOSE 8080
-ARG JAR_FILE=target/movies-0.0.1-SNAPSHOT.jar
-ADD ${JAR_FILE} movies-docker.jar
-ENTRYPOINT ["java","-jar","movies-docker.jar"]
+ADD ./docker-spring-boot.jar docker-spring-boot.jar
+ENTRYPOINT ["java","-jar","docker-spring-boot.jar"]
